@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Birds Game | Game</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <header class="game-header">
+            <div class="button"><a href="game.html">Restart</a></div>
+            <p class="msg" id="msg_info">What bird makes this sound?</p>
+            <p class="msg" id="msg_error">Right, but that's not how <span id="birdName"></span> sings.</p>
+            <div class="timer">
+                <time>00:00</time>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <div class="game-content">
+            <div class="birds-wrappper">
+                <div class="top-birds">
+                    <div class="bird-img" id="bsw-img" data-accept="bsw" data-img="BSw"></div>
+                    <div class="bird-img" id="ccuck-img" data-accept="ccuck" data-img="CCuckoo"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bird-img" id="grtit-img" data-accept="grtit" data-img="GrTit"></div>
+            </div>
+            <div class="cards-wrapper">
+                <div class="bird-card" id="grtit-card" data-target="grtit">Great Titmouse</div>
+                <div class="bird-card" id="bsw-card" data-target="bsw">Barn Swallow</div>
+                <div class="bird-card" id="ccuck-card" data-target="ccuck">Common Cuckoo</div>
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <audio id="bird-player" data-audio="">
+        <source id="src-song" src="" type="audio/mpeg">
+    </audio>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
