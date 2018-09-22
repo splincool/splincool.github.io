@@ -1,0 +1,164 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #95B3C1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.start-info {
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.start-info.result {
+    text-align: center;
+    height: 300px;
+}
+
+.start-info.result .button {
+    text-align: center;
+}
+
+.start-info a {
+    text-decoration: none;
+}
+
+.msg {
+    font-size: 32px;
+    color: #D1EAE9;
+    margin-bottom: 20px;
+}
+
+.button a {
+    background: #11423B;
+    color: #D1EAE9;
+    font-size: 32px;
+    width: auto;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.number {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.game-wrapper {
+    margin: 0 auto;
+    min-width: 1160px;
+    max-width: 2000px;
+}
+
+.game-header {
+    padding: 10px 20px;
+}
+
+.game-header .button {
+    width: 200px;
+    float: left;
+}
+
+.game-header .msg {
+    float: left;
+    margin: 0px 30px;
+    padding: 5px 0px;
+}
+
+.game-header .timer {
+    float: right;
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: 32px;
+}
+
+.clear {
+    clear: both;
+}
+
+.game-content {
+    background: #D1EAE9;
+}
+
+.birds-wrappper {
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+
+.cards-wrapper {
+    width: 30%;
+    float: right;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.bird-img {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#bsw-img {
+    background-image: url("../images/BSw.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ccuck-img {
+    background-image: url("../images/CCuckoo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#grtit-img {
+    background-image: url("../images/GrTit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bsw-img {
+    float: left;
+}
+
+#ccuck-img {
+    float: right;
+}
+
+.bird-card {
+    background: #fff;
+    color: #3F3B3B;
+    font-size: 32px;
+    width: 300px;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 50px auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#bsw-card {
+    transform: rotate(-5deg);
+}
+
+#ccuck-card {
+    transform: rotate(2deg); 
+}
+
+#grtit-card {
+   transform: rotate(10deg); 
+}
+
+#msg_error {
+    display: none;
+}
