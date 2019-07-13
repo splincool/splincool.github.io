@@ -1,0 +1,217 @@
+
+/* Variables */
+$btnBackground: rgb(214, 140, 111)
+  
+
+body 
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0
+  padding: 0
+  background: #fff
+
+.container
+  width: 1200px
+  margin: 0 auto
+  box-shadow: 0px 0 5px 0px rgba(0, 0, 0, 0.2)
+
+.btn
+  display: inline-flex
+  border-radius: 28px
+  background: $btnBackground
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
+  font-size: 18px
+  color: rgb(255, 255, 255)
+  font-weight: bold
+  padding: 18px 43px
+  cursor: pointer
+.btn:hover
+  background: darken($btnBackground, 10)  
+
+header
+  height: 650px
+  background: url('../images/header_area.png')
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 30px 130px
+
+.topline
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    background: url('../images/duck-pack-logo.png')
+    background-repeat: no-repeat
+    background-size: cover
+    width: 106px
+    height: 17px
+  .menu
+    font-size: 18px
+    color: rgb(46, 66, 101)
+    a 
+      font-size: 18px
+      color: #6d6d6d
+      text-decoration: none
+      &:not(:last-child)
+        margin-right: 30px
+      &.active,
+      &:hover
+        color: #445572
+        text-decoration: underline 
+.banner
+  width: 518px
+  margin-top: 150px
+  h1 
+    font-size: 60px
+    color: rgb(46, 66, 101)
+    font-weight: bold
+  p 
+    font-size: 16px
+    color: rgba(40, 40, 40, 0.8)
+    margin: 40px 0
+    line-height: 1.7
+.product-header-bg
+  background: url('../images/productivity_area.png')
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100%
+  height: 802px
+.info-blocks-wrapper
+  display: grid
+  grid-template-columns: 480px 480px
+  grid-template-rows: 250px 250px
+  grid-column-gap: 40px
+  justify-content: center
+  align-items: center
+  margin-top: -105px
+  padding-bottom: 100px
+  .info-block-item
+    .title
+      font-size: 63px
+      color: rgb(46, 66, 101)
+      font-weight: bold
+    .text
+      font-size: 16px
+      color: rgb(99, 99, 99)
+      line-height: 1.7
+      margin-top: 25px
+    &:nth-child(1)
+      .title
+        background: url('../images/01.png')
+        background-repeat: no-repeat
+        background-size: contain
+    &:nth-child(2)
+      .title
+        background: url('../images/02.png')
+        background-repeat: no-repeat
+        background-size: contain
+    &:nth-child(3)
+      .title
+        background: url('../images/03.png')
+        background-repeat: no-repeat
+        background-size: contain
+    &:nth-child(4)
+      .title
+        background: url('../images/04.png')
+        background-repeat: no-repeat
+        background-size: contain     
+.subscribe
+  background: url('../images/subscribe_area.png')
+  background-repeat: no-repeat
+  background-size: cover
+  height: 418px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  line-height: 2
+  .subscribe-header
+    font-size: 60px
+    color: rgb(46, 66, 101)
+    font-weight: bold 
+  .subscribe-text
+    font-size: 18px
+    color: rgb(85, 85, 85)
+    line-height: 1.1
+  .subscribe-input
+    display: flex
+    margin-top: 50px
+    input
+      width: 350px
+      height: 41px
+      background: transparent
+      border: none
+      border-bottom: 3px solid rgb(214, 140, 111)
+      text-indent: 20px
+      font-size: 18px
+    .subscribe-btn
+      width: 46px
+      height: 46px
+      background: url('../images/fa-paper-plane.png')
+      background-repeat: no-repeat
+      background-size: 60%
+      background-color: #d68c6f
+      background-position: center center
+      cursor: pointer
+      &:hover
+        background-color: darken($btnBackground, 10)
+.price-list
+  background-color: #f3f3f3
+  padding-bottom: 30px
+  .price-list-item
+    width: 650px
+    padding: 50px 10px 50px 500px
+    .title
+      font-size: 63px
+      color: rgb(46, 66, 101)
+      font-weight: bold
+    .price
+      display: inline-flex
+      align-items: center
+      border: 1px solid #f0e8e6
+      border-radius: 50px
+      padding: 8px 40px
+      margin: 35px 0
+      .value
+        font-size: 30px
+        color: rgb(214, 140, 111)
+        font-weight: bold
+      .pic
+        font-size: 33px
+        color: rgb(214, 140, 111)
+        font-weight: 100
+    .text
+      font-size: 16px
+      color: rgb(85, 85, 85)
+      line-height: 1.7
+      margin-bottom: 40px
+    &:nth-child(1)
+      background: url('../images/crested.png'), url('../images/crested-duck.png') 120px
+      background-repeat: no-repeat
+      background-size: contain
+    &:nth-child(2)
+      background: url('../images/rouen.png'), url('../images/rouen-duck.png') 130px
+      background-repeat: no-repeat
+      background-size: contain, 40% 
+    &:nth-child(3)
+      background: url('../images/muscovy.png'), url('../images/muscovy-duck.png') 180px
+      background-repeat: no-repeat
+      background-size: contain, 30%    
+footer 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 130px
+  height: 60px
+  background: #2e4265
+  .all-rights
+    font-size: 16px
+    color: rgba(255, 255, 255, 0.302)
+    line-height: 1.25
+  nav 
+    a 
+      color: #fff
+      text-decoration: none
+      &:not(:last-child)
+        margin-right: 30px
+      &:hover
+        color: darken(#fff, 10)   
